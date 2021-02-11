@@ -21,7 +21,9 @@ var chromeOptions = {
   'args': ["user-agent=12345 MRA 5.4 (build 02647);"]
 }; // GoogleAuth/1.4 (osprey_umts MPIS24.65-33.1-2-16); gzip,gzip(gfe),gzip(gfe)
 // https://github.com/SeleniumHQ/selenium/commit/4c8646cde1dcebbf2665b676aa5ce010c6598dce
-chromeCapabilities.set('goog:chromeOptions', chromeOptions);
+
+// COMMENT THIS IN/OUT TO TEST
+// chromeCapabilities.set('goog:chromeOptions', chromeOptions);
 
 (async function example() {
   const driver = new webdriver.Builder().withCapabilities(chromeCapabilities).build();
